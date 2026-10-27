@@ -1,0 +1,23 @@
+# Virtual environment (huge, and recreated from requirements.txt)
+.venv/
+venv/
+
+# Python junk
+__pycache__/
+*.pyc
+
+# PyCharm settings (specific to your machine)
+.idea/
+
+# Large or regenerated files
+*.h5
+*.keras
+*.pkl
+
+# Collected data (optional, see below)
+data/
+*.csv
+
+# OS files
+.DS_Store
+Thumbs.db
