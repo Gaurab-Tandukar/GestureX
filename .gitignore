@@ -23,4 +23,4 @@ data/
 Thumbs.db
 
 # temporary learning mini projects
-openCV/
+src/openCV/
