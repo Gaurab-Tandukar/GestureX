@@ -44,9 +44,9 @@ with vision.HandLandmarker.create_from_options(options) as landmarker:
         for hand in result.hand_landmarks:
             pts = [(int(p.x * w), int(p.y * h)) for p in hand]
             for a, b in CONNECTIONS:
-                cv2.line(frame, pts[a], pts[b], (0, 255, 0), 2)
+                cv2.line(frame, pts[a], pts[b], (255, 255, 255), 2)
             for pt in pts:
-                cv2.circle(frame, pt, 4, (0, 0, 255), -1)
+                cv2.circle(frame, pt, 4, (0, 0, 0), -1)
 
         cv2.imshow("GestureX", frame)
         if cv2.waitKey(1) & 0xFF == ord("q"):  # press q to quit
